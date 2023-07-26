@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>style3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+</head>
+<body class="style3-content style3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="style3-display-container style3-center">
+  <button class="style3-button style3-block style3-green style3-hide-large style3-hide-medium" onclick="document.getElementById('download').style.display='block'">Explore <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides style3-animate-opacity">
+    <img class="style3-image" src="https://www.the-sun.com/wp-content/uploads/sites/6/2021/01/NINTCHDBPICT000633460891.jpg?w=1040" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="style3-display-left style3-padding style3-hide-small" style="width:35%">
+      <div class="style3-black style3-opacity style3-hover-opacity-off style3-padding-large style3-round-large">
+        <h1 class="style3-xlarge">Providing Teen Opportunities</h1>
+        <hr class="style3-opacity">
+        <p>Volunteering</p>
+        <p><button class="style3-button style3-block style3-green style3-round" onclick="document.getElementById('Explore').style.display='block'">Explore</i></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mySlides style3-animate-opacity">
+    <img class="style3-image" src="https://animalcoursesdirect.co.uk/ckfinder/userfiles/images/image001.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+    <div class="style3-display-left style3-padding style3-hide-small" style="width:35%">
+      <div class="style3-black style3-opacity style3-hover-opacity-off style3-padding-large style3-round-large">
+        <h1 class="style3-xlarge">Teen Opportunities</h1>
+        <hr class="style3-opacity">
+        <p>Internships</p>
+        <p><button class="style3-button style3-block style3-indigo style3-round" onclick="document.getElementById('Explore').style.display='block'">Explore </i></button></p>
+      </div>
+    </div>
+  </div>
+  <a class="style3-button style3-black style3-display-right style3-margin-right style3-round style3-hide-small style3-hover-light-grey" onclick="plusDivs(1)"> <i class="fa fa-angle-right"></i></a>
+  <a class="style3-button style3-block style3-black style3-hide-large style3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- Volunteering -->
+<div class="style3-padding-64 style3-white">
+  <div class="style3-row-padding">
+    <div class="style3-col l8 m6">
+      
+      <h1 class="style3-xxxlarge style3-text-green"><b>VOLUNTEERING</b></h1>
+      <p><span class="style3-xlarge">Teens, so up for the volunteering?</span> Volunteering can provide a healthy boost to your self-confidence, self-esteem, and life satisfaction. 
+You are doing good for others and the community, which provides a natural sense of accomplishment. 
+Your role as a volunteer can also give you a sense of pride and identity.</p>
+      
+      
+    </div>
+    <div class="style3-col l4 m6">
+      <img src="https://catcafesnearme.com/wp-content/uploads/2022/01/cat-cafes-near-me-united-states.png" class="style3-image style3-round-large style3-hide-small style3-grayscale" width="335" height="471">
+
+</div>
+
+<!-- Internship -->
+<div class="style3-padding-64 style3-light-grey">
+  <div class="style3-row-padding">
+    <div class="style3-col l4 m6">
+      <img class="style3-image style3-round-large style3-hide-small style3-grayscale" src="https://imgmedia.lbb.in/media/2019/08/5d5d0852b6241772ef59d46e_1566378066978.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="style3-col l8 m6">
+      
+      <h1 class="style3-xxxlarge style3-text-red"><b>Internship</b></h1>
+      <p><span class="style3-xlarge">So, what's say? Gotta grab the internship?</span> Just having a good degree is no longer enough to secure that all-important graduate job offer in today’s world.
+Pertinent work experience is now just as valuable as your degree and exam results when it comes to building a successful career.
+As a result, internships have become an essential way to help candidates make themselves stand out
+We are here to provide you an astounding experience to add up values to your curriculum vitae and shine out in the society.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="style3-container style3-padding-32 style3-light-grey style3-center style3-xlarge">
+  
+ 
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
